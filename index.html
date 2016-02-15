@@ -7,6 +7,15 @@
 .layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
   padding-right: 0;
 }
+
+.welcome-card.mdl-card {
+  width: 512px;
+}
+.welcome-card > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../assets/images/welcome.png') center / cover;
+}
 </style>
 
 <div class="layout-waterfall mdl-layout mdl-js-layout">
@@ -31,15 +40,12 @@
   </div>
   <main class="mdl-layout__content">
     <div class="page-content">
-	  <div class="mdl-card mdl-shadow--2dp">
+	  <div class="welcome-card mdl-card mdl-shadow--2dp">
 	    <div class="mdl-card__title">
 		  <h3 class="mdl-card__title-text">Welcome to DominionOS</h3>
 		</div>
-		<div class="mdl-card__media">
-		  <image src="../assets/images/welcome.png" width="220" height="140" border="0" alt="This image is temporary" style="padding:0px;">
-		</div>
 		<div class="mdl-card__supporting-text">
-		  Tailored to the community (thats you!), DominionOS defines control!
+		  Made by the community (thats you!), DominionOS defines control!
 		</div>
 		<div class="mdl-card__actions mdl-card--border">
 		 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="">
