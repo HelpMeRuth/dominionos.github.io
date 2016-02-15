@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.red-blue.min.css" />
+<script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+
+<style>
+.layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+  padding-right: 0;
+}
+
+</style>
+
+<div class="layout-waterfall mdl-layout mdl-js-layout mdl-shadow--2dp">
+  <header class="mdl-layout__header mdl-layout__header--waterfall">
+    <div class="mdl-layout__header-row">
+	  <span class="mdl-layout-title">DominionOS</span>
+	  <div class="mdl-layout-spacer"></div>
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Navigation</span>
+    <nav class="mdl-navigation">
+	  <a class="mdl-navigation__link" href="../index.html">Home</a>
+      <a class="mdl-navigation__link" href="">Supported Devices</a>
+      <a class="mdl-navigation__link" href="">Feature Requests</a>
+      <a class="mdl-navigation__link" href="">Bug Reports</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="card-content page-content"></div>
+  </main>
+</div>
