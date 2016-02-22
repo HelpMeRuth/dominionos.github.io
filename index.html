@@ -17,11 +17,6 @@
   color: #ffffff;
   width: 250px;
 }
-.welcome-card > .mdl-card__title {
-  color: #ffffff;
-  height: 250px;
-  background: url('../assets/images/welcome.png') center / cover;
-}
 
 <!-- "Changelog" card -->
 .changelog-card.mdl-card {
@@ -69,11 +64,14 @@
   </div>
   <main class="mdl-layout__content">
     <div class="card-content page-content">
-	  <div class="grid-1 mdl-grid">
+	  <div class="mdl-grid">
 	    <div class="mdl-cell mdl-cell--3-col welcome-card mdl-card mdl-shadow--4dp">
 	      <div class="mdl-card__title">
 		    <h3 class="mdl-card__title-text">Welcome to DominionOS</h3>
 	      </div>
+		  <div class="mdl-card__media">
+		    <img src="../assets/images/welcome.png" width="250" height="250" border="0" alt="DominionOS logo">
+		  </div>
 		  <div class="mdl-card__supporting-text">
 		    Made for the community (thats you), DominionOS defines control!
 		  </div>
