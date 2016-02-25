@@ -39,7 +39,12 @@
 }
 
 </style>
-
+<div id="pageload" class="mdl-progress mdl-js-progress"></div>
+<script>
+  document.querySelector('#pageload').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(44);
+  });
+</script>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header mdl-shadow--6dp">
     <div class="mdl-layout__header-row">
@@ -56,6 +61,11 @@
       <a class="mdl-navigation__link" href="">Bug Reports</a>
     </nav>
   </div>
+<script>
+  document.querySelector('#pageload').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(68);
+  });
+</script>
   <main class="mdl-layout__content">
     <div class="card-content page-content">
 	  <div class="mdl-grid">
@@ -104,4 +114,9 @@
 	  </div>
 	</div>
   </main>
+<script>
+  document.querySelector('#pageload').addEventListener('mdl-componentupgraded', function() {
+    this.MaterialProgress.setProgress(100);
+  });
+</script>
 </div>
