@@ -8,7 +8,7 @@
 <style>
 
 <!-- Page Header -->
-.mdl-layout {
+.fancy-header .mdl-layout__header {
   background: url('../assets/images/header.jpg') center / cover;
 }
 .mdl-layout__header {
@@ -19,8 +19,7 @@
   // override initial background when scrolling
   background: rgb(63,81,181);
 }
-.mdl-layout__header,
-.mdl-layout__drawer-button {
+.fancy-header.mdl-layout__drawer-button {
   color: white;
 }
 
@@ -62,7 +61,7 @@
 </style>
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header-waterfall">
+  <header class="fancy-header mdl-layout__header mdl-layout__header--transparent mdl-layout__header-waterfall">
     <div class="mdl-layout__header-row">
 	  <span class="mdl-layout-title">DominionOS</span>
 	  <div class="mdl-layout-spacer"></div>
