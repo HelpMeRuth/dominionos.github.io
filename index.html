@@ -6,8 +6,19 @@
 <script src="../parallax.min.js"></script>
 
 <style>
+
+<!-- Page Header -->
+.transparent-layout {
+  background: url('../assets/images/header.jpg') center / cover;
+}
+.transparent-layout .mdl-layout__header,
+.transparent-layout .mdl-layout__drawer-button {
+  color: white;
+}
+
+<!-- Content padding -->
 .card-content.page-content {
-  padding: 15px 30px;
+  padding: 20px 60px;
 }
 
 <!-- "Welcome to DominionOS" card -->
@@ -42,8 +53,8 @@
 }
 </style>
 
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-shadow--6dp">
+<div class="transparent-header mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header-transparentmdl-shadow--6dp">
     <div class="mdl-layout__header-row">
 	  <span class="mdl-layout-title">DominionOS</span>
 	  <div class="mdl-layout-spacer"></div>
