@@ -2,74 +2,28 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="../material.min.css">
 <script src="./material.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="../parallax.min.js"></script>
 
+<!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
-
-<!-- Page Header -->
-.layout-transparent {
+.demo-layout-transparent {
   background: url('../assets/images/header.jpg') center / cover;
 }
-.layout-transparent .mdl-layout__header,
-.layout-transparent .fancy-header.mdl-layout__drawer-button {
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
   color: white;
 }
-
-<!-- Content padding -->
-.card-content.page-content {
-  padding: 20px 60px;
-}
-
-<!-- "Welcome to DominionOS" card -->
-.welcome-card.mdl-card {
-  color: #fff;
-}
-.welcome-card > .mdl-card__media > img {
-  color: #fff;
-  max-width: 100%;
-}
-
-<!-- "Changelog" card -->
-.changelog-card.mdl-card {
-  width: 355px;
-  height: 230px;
-}
-.changelog-card > .mdl-card__title {
-  color: #fff;
-  height: 175px;
-  background: url('../assets/images/changelog.png') center / cover;
-}
-
-<!-- "Is your device supported" card -->
-.supported-card.mdl-card {
-  width: 400px;
-  height: 355px;
-}
-.supported-card > .mdl-card__title {
-  color: #fff;
-  height: 300px;
-  background: url('../assets/images/devices.jpg') center / cover;
-}
 </style>
-  <div class="layout-transparent mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">DominionOS</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
       <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
@@ -77,52 +31,16 @@
         <a class="mdl-navigation__link" href="">Link</a>
       </nav>
     </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
   <main class="mdl-layout__content">
-    <div class="card-content page-content">
-	  <div class="mdl-grid">
-	    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet welcome-card mdl-card mdl-shadow--4dp">
-		  <div class="mdl-card__media">
-		    <img src="../assets/images/welcome.png" alt="DominionOS logo">
-		  </div>
-	      <div class="mdl-card__title">
-		    <h3 class="mdl-card__title-text">Welcome to DominionOS</h3>
-	      </div>
-		  <div class="mdl-card__supporting-text">
-		    Made for the community (thats you), DominionOS defines control!
-		  </div>
-		  <div class="mdl-card__actions mdl-card--border">
-		    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="">
-		      Find Out More
-		    </a>
-		  </div>
-	    </div>
-	    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet changelog-card mdl-card mdl-shadow--4dp">
-	      <div class="mdl-card__title">
-		    <h3 class="mdl-card__title-text">Changelogs</h3>
-		  </div>
-		  <div class="mdl-card__supporting-text">
-		    Find Out Whats New
-		  </div>
-		  <div class="mdl-card__actions mdl-card--border">
-		    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="../changelogs">
-		      View All ChangeLogs
-		    </a>
-		  </div>
-	    </div>
-		<div class="mdl-cell mdl-cell--4-col mdl-cell--5-col-tablet supported-card mdl-card mdl-shadow--4dp">
-		  <div class="mdl-card__title">
-		    <h3 class="mdl-card__title-text">Is Your Device Supported</h3>
-		  </div>
-		  <div class="mdl-card__supporting-text">
-		    Is Your Device Officially Supported?
-		  </div>
-		  <div class="mdl-card__actions mdl-card--border">
-		    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="../devices">
-			  Supported Devices
-			</a>
-		  </div>
-		</div>
-	  </div>
-	</div>
   </main>
 </div>
