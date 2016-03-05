@@ -5,8 +5,11 @@
 
 <!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
-.fancy-header {
+.fancy-header-background {
   background: url('../assets/images/header.jpg') center / cover;
+}
+.fancy-header .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
 }
 .fancy-header .mdl-layout__header {
   // add background transition
@@ -23,11 +26,11 @@
   color: white;
 }
 </style>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="fancy-header mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
+<div class="fancy-header mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="fancy-header-background mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Title</span>
+      <span class="mdl-layout-title">DominionOS</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <div class="mdl-layout__header-row">
