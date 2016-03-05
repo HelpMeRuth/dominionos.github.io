@@ -5,26 +5,26 @@
 
 <!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
-.mdl-layout {
+.fancy-header {
   background: url('../assets/images/header.jpg') center / cover;
 }
-.mdl-layout__header {
+.fancy-header .mdl-layout__header {
   // add background transition
   transition-property: max-height,box-shadow,background;
 }
-.mdl-layout__header.is-casting-shadow {
+.fancy-header .mdl-layout__header.is-casting-shadow {
   // override initial background when scrolling
   background: rgb(63,81,181);
 }
-.mdl-layout__header,
-.mdl-layout__drawer-button {
+.fancy-header .mdl-layout__header,
+.fancy-header .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
 }
 </style>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
+  <header class="fancy-header mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title">Title</span>
