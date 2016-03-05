@@ -3,8 +3,9 @@
 <link rel="stylesheet" href="../material.min.css">
 <script src="./material.min.js"></script>
 
-<!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
+
+<!-- Fancy Header :D -->
 .fancy-header-background {
   background: url('../assets/images/header.jpg') center / cover;
 }
@@ -24,6 +25,23 @@
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
+}
+
+<!-- Content padding -->
+.card-content.page-content {
+  padding: 20px 60px;
+}
+
+<!-- "Welcome to DominionOS" card -->
+.welcome-card.mdl-card {
+  color: #fff;
+}
+.welcome-card > .mdl-card__media > img {
+  color: #fff;
+  max-width: 100%;
+}
+.welcome-card > .mdl-button--icon {
+  color: black;
 }
 </style>
 <div class="fancy-header mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -46,36 +64,25 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
+    <span class="mdl-layout-title">Navigation</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="../changelogs">Changelogs</a>
+      <a class="mdl-navigation__link" href="">Feature Requests</a>
+      <a class="mdl-navigation__link" href="">Bug Reports</a>
+      <a class="mdl-navigation__link" href="../devices">Supported Devices</a>
     </nav>
   </div>
-  <main class="mdl-layout__content">
+  <main class="card-content mdl-layout__content">
     <div class="mdl-grid">
-      <div class="mdl-cell mdl-card mdl-shadow--2dp">
+      <div class="welcome-card mdl-cell mdl-card mdl-shadow--2dp">
+	    <div class="mdl-card__media">
+		  <img src="../assets/images/welcome.png">
+		</div>
         <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Welcome</h2>
+          <h2 class="mdl-card__title-text">Welcome to DominionOS</h2>
         </div>
-        <div class="mdl-card__supporting-text post-excerpt">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Mauris sagittis pellentesque lacus eleifend lacinia...
-        </div>
-        <div class="mdl-card__actions mdl-card--border post-categories post-tags">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent">
-            Uncategorized
-          </a>
-        </div>
-        <div class="mdl-card__actions post-categories post-tags">
-          <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">
-            pets
-          </a>
-          <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">
-            cats
-          </a>
+        <div class="mdl-card__supporting-text">
+          Made for the community (thats you), DominionOS defines control!
         </div>
         <div class="mdl-card__menu">
           <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
