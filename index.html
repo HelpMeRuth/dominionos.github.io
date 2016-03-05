@@ -5,31 +5,45 @@
 
 <!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
-.fancy-header {
+.mdl-layout {
   background: url('../assets/images/header.jpg') center / cover;
 }
-.fancy-header .mdl-layout__header,
-.fancy-header .mdl-layout__drawer-button {
+.mdl-layout__header {
+  // add background transition
+  transition-property: max-height,box-shadow,background;
+}
+.mdl-layout__header.is-casting-shadow {
+  // override initial background when scrolling
+  background: rgb(63,81,181);
+}
+.mdl-layout__header,
+.mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: white;
 }
 </style>
-
-<div class="mdl-layout mdl-js-layout">
-  <header class="fancy-header mdl-layout__header mdl-layout__header--transparent">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">DominionOS</span>
+      <span class="mdl-layout-title">Title</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>
+      <!-- Search -->
+      
+      <form action="">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp" />
+        </div>
+      </div>
+      </form>
+      
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -42,5 +56,34 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Welcome</h2>
+        </div>
+        <div class="mdl-card__supporting-text post-excerpt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Mauris sagittis pellentesque lacus eleifend lacinia...
+        </div>
+        <div class="mdl-card__actions mdl-card--border post-categories post-tags">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--accent">
+            Uncategorized
+          </a>
+        </div>
+        <div class="mdl-card__actions post-categories post-tags">
+          <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">
+            pets
+          </a>
+          <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">
+            cats
+          </a>
+        </div>
+        <div class="mdl-card__menu">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">share</i>
+          </button>
+        </div>
+      </div>
+    </div>
   </main>
 </div>
