@@ -32,7 +32,7 @@
 }
 
 <!-- Content padding -->
-.card-content.page-content {
+.card-content .page-content > .mdl-grid {
   padding: 20px 60px;
 }
 
@@ -82,20 +82,22 @@
       <a class="mdl-navigation__link" href="../devices">Supported Devices</a>
     </nav>
   </div>
-  <main class="card-content mdl-layout__content">
-    <div class="mdl-grid">
-      <div class="welcome-card mdl-cell mdl-card mdl-shadow--2dp">
-	    <div class="mdl-card__media">
-		  <img src="../assets/images/welcome.png">
-		</div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Welcome to DominionOS</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          Made for the community (thats you), DominionOS defines control!
+  <main class="mdl-layout__content">
+    <div class="card-content page-content">
+      <div class="mdl-grid">
+        <div class="welcome-card mdl-cell mdl-card mdl-shadow--2dp">
+	      <div class="mdl-card__media">
+		    <img src="../assets/images/welcome.png">
+    	  </div>
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Welcome to DominionOS</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Made for the community (thats you), DominionOS defines control!
+          </div>
         </div>
       </div>
+	  <div class="parallax-content" data-parallax="scroll" data-bleed="10" data-image-src="./assets/images/parallax.jpg" data-natural-width="3840" data-natural-height="1620"></div>
     </div>
   </main>
-  <div class="parallax-content" data-parallax="scroll" data-bleed="500" data-image-src="./assets/images/parallax.jpg" data-natural-width="3840" data-natural-height="1620"></div>
 </div>
