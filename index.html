@@ -1,112 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DominionOS</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="../material.min.css">
-  <script src="./material.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="../parallax.min.js"></script>
 
-  <style>
-
-    <!-- Page background -->
-    .dark-bg {
-      color: #333333 !important;
-    }
-
-    <!-- Fancy Header :D (It used to be fancier) -->
-    .fancy-header .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
-      padding-right: 0;
-    }
-    .fancy-header .mdl-layout__header {
-      // add background transition
-      transition-property: max-height,box-shadow,background;
-    }
-    .fancy-header .mdl-layout__header.is-casting-shadow {
-      // override initial background when scrolling
-      background: rgb(244,67,54);
-    }
-    .fancy-header .mdl-layout__header,
-    .fancy-header .mdl-layout__drawer-button {
-      /* This background is dark, so we set text to white. Use 87% black instead if
-         your background is light. */
-      color: white;
-    }
-
-    <!-- Content padding -->
-    .card-content .page-content > .mdl-grid {
-      padding: 20px 60px;
-    }
-
-    <!-- "Welcome to DominionOS" card -->
-    .welcome-card.mdl-card {
-      color: #fff;
-    }
-    .welcome-card > .mdl-card__media > img {
-      color: #fff;
-      max-width: 100%;
-    }
-    .welcome-card > .mdl-button--icon {
-      color: #000;
-    }
-
-    <!-- Parallax container -->
-    .parallax-container {
-      height: 400px;
-      background: transparent;
-    }
-	.parallax-mirror {
-	  height: 400px;
-	}
-
-  </style>
-  <div class="dark-bg fancy-header mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header mdl-layout__header--waterfall">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">DominionOS</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-	  </div>
-      <div class="mdl-layout__header-row">
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Navigation</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="../changelogs">Changelogs</a>
-        <a class="mdl-navigation__link" href="">Feature Requests</a>
-        <a class="mdl-navigation__link" href="">Bug Reports</a>
-        <a class="mdl-navigation__link" href="../devices">Supported Devices</a>
-      </nav>
-    </div>
-    <main class="mdl-layout__content">
-      <div class="card-content page-content">
-        <div class="mdl-grid">
-          <div class="welcome-card mdl-cell mdl-card mdl-shadow--2dp">
-	        <div class="mdl-card__media">
-		      <img src="../assets/images/welcome.png">
-    	    </div>
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Welcome to DominionOS</h2>
+<header>
+    <!--Navigation-->
+    <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-light" href="#">MDBootstrap</a>
             </div>
-            <div class="mdl-card__supporting-text">
-              Made for the community (thats you), DominionOS defines control!
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="waves-effect waves-light">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" class="waves-effect waves-light">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group waves-effect waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
             </div>
-          </div>
         </div>
-        <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./assets/images/parallax.jpg" data-natural-width="3105" data-natural-height="2169"></div>
-      </div>
-    </main>
-  </div>
+    </nav>
+    <!--/.Navigation-->
+</header>
+
+<main>
+    <!--Main Container-->
+    <div class="container">
+        <!--First Row-->
+        <div class="row">
+
+            <!--First Column-->
+            <div class="col-md-6">
+                <img src="http://mdbootstrap.com/MDB/live/Corporate/img/project2.png" class="img-responsive">
+            </div>
+            <!--/.First Column-->
+
+            <!--Second Column-->
+            <div class="col-md-6">
+                <!--Heading-->
+                <h4>Material Design for Bootstrap</h4>
+                    
+                <!--Description-->
+                <p>Google designed a Material Design to make a web more beautiful. Twitter created a Bootstrap to support you in faster and easier development of responsive websites. Material Design for Bootstrap contains both!</p>
+                    
+                <!--Call to action button-->
+                <a href="http://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-info waves-effect waves-light ">Get it now!</a>
+            </div>
+            <!--/.Second Column-->
+
+        </div>
+        <!--/.First Row-->
+            
+        <!--Second Row-->
+        <div class="row">
+
+            <!--First Column-->
+            <div class="col-md-4">
+
+            </div>
+            <!--/.First Column-->
+
+            <!--Second Column-->
+            <div class="col-md-4">
+
+            </div>
+            <!--/.Second Column-->
+                
+            <!--Third Column-->
+            <div class="col-md-4">
+
+            </div>
+            <!--/.Third Column-->
+
+        </div>
+        <!--/.Second Row-->
+
+    </div>
+    <!--/.Main Container-->
+</main>
+
+<footer>
+</footer>
+
 </html>
