@@ -20,6 +20,9 @@
     <link href="css/mdb.min.css" rel="stylesheet">
 
 	<style>
+	dark {
+	    background-color: #212121 !important;
+	}
         body {
             background-color: #212121 !important;
 			padding-top: 120px;
@@ -36,18 +39,16 @@
                 background-color: #F44336 !important;
             }
         }
-		.parallax-window {
-		min-height: 400px;
-		margin: 0 auto;
-		width: 100%;
-		background: transparent;
-		}
+	.parallax-window {
+	min-height: 400px;
+	margin: 0 auto;
+	width: 100%;
+	background: transparent;
+	}
     </style>
 </head>
 
 <body>
-
-    <!--Header Section-->
     <header>
     <!--Navigation-->
     <nav class="navbar navbar-fixed-top" id="navbar" role="navigation">
@@ -64,7 +65,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle waves-effect waves-dark" data-toggle="dropdown" role="button" aria-expanded="false">Development <span class="caret"></span></a>
+						<a href="#" id="dark" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" role="button" aria-expanded="false">Development <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#">Changelogs</a></li>
 							<li><a href="#">Feature Requests</a></li>
@@ -78,12 +79,8 @@
             </div>
         </div>
     </nav>
-    <!--/.Navigation-->
-
     </header>
-    <!--/.Header Section-->
 
-    <!--Main Section-->
     <main>
 
         <!--Main Container-->
@@ -112,7 +109,7 @@
 					</div>
 
                     <!--Call to action button-->
-                    <a href="" class="btn btn-danger waves-effect waves-dark">Learn More</a>
+                    <a href="" class="btn btn-primary waves-effect waves-dark">Learn More</a>
 
                 </div>
                 <!--/.Second Column-->
