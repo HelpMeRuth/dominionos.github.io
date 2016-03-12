@@ -12,3 +12,15 @@ jQuery(window).load(function() {
         // will fade out the whole DIV that covers the website.
 	jQuery("#preloader").delay(1000).fadeOut("slow");
 })
+$(document).ready(function(){
+    $('.social-feed-container').socialfeed({
+        // GOOGLEPLUS
+        google:{
+            accounts: ['#DominionOS'],  //Array: Specify a list of accounts from which to pull posts
+            limit: 5,                                    //Integer: max number of posts to load
+            access_token: 'YOUR_GOOGLE_PLUS_ACCESS_TOKEN' //String: Google Plus access token
+        },
+         // GENERAL SETTINGS
+        length:20                                     //Integer: For posts with text longer than this length, show an ellipsis.
+    });
+});
