@@ -18,7 +18,7 @@ $(document).ready(function(){
         google:{
             accounts: ['#DominionOS'],  //Array: Specify a list of accounts from which to pull posts
             limit: 5,                                    //Integer: max number of posts to load
-            access_token: 'YOUR_GOOGLE_PLUS_ACCESS_TOKEN' //String: Google Plus access token
+            access_token: 'AIzaSyDAelFmJhg6BSUbSLe8UT7s-G53tL4_KRg' //String: Google Plus access token
         },
          // GENERAL SETTINGS
         length:20                                     //Integer: For posts with text longer than this length, show an ellipsis.
