@@ -19,9 +19,6 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
 
-    <!-- Preloader -->
-    <link href="preloader/preloader.css" rel="stylesheet">
-
 	<style>
 	.dropdown-menu {
 	    background-color: #212121 !important;
@@ -52,15 +49,6 @@
 </head>
 
 <body>
-    <div id="preloader">
-        <div class="verticalcenter">
-            <div class="text-center">
-                <div id="status">
-                    <h4 class="white-text">Just a second...</h4>
-                </div>
-            </div>
-        </div>
-    </div>
     <header>
     <!--Navigation-->
     <nav class="navbar navbar-fixed-top" id="navbar" role="navigation">
@@ -247,20 +235,6 @@
 
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
-
-    <!-- Preloader -->
-    <script type="text/javascript">
-        //<![CDATA[
-        $(document).ready(function () {
-            $('#status').load("preloader/preloader.html", function () {
-                $('#preloader').delay(2500).fadeOut('slow');
-                $('body').delay(2500).css({
-                    'overflow': 'visible'
-                });
-            });
-        });
-        //]]>
-    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
