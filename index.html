@@ -45,11 +45,34 @@
 	width: 100%;
 	background: transparent;
 	}
-
+	#preloader  {
+	     position: absolute;
+     	top: 0;
+     	left: 0;
+     	right: 0;
+     	bottom: 0;
+     	background-color: #222222;
+     	z-index: 99;
+    	height: 100%;
+ 	}
+	#status  {
+     	width: 200px;
+     	height: 200px;
+     	position: absolute;
+     	left: 50%;
+     	top: 50%;
+     	background-image: url(img/loading.gif);
+     	background-repeat: no-repeat;
+     	background-position: center;
+     	margin: -100px 0 0 -100px;
+ 	}
     </style>
 </head>
 
 <body>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
     <header>
     <!--Navigation-->
     <nav class="navbar navbar-fixed-top" id="navbar" role="navigation">
